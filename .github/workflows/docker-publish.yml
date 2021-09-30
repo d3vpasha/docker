@@ -16,7 +16,7 @@ jobs:
         with:
           registry: ghcr.io
           username: d3vpasha
-          password: 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
+          password: ${{ secrets.CR_PAT }}
 
 
       - name: Build and push Docker image
