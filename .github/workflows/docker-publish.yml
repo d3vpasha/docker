@@ -8,7 +8,10 @@ jobs:
     name: "build webapp"
     runs-on: ubuntu-latest
     steps:
-      - name: "Build:checkout"
+      - name: Checkout the repo
         uses: actions/checkout@main
-      - name: 'Build:dockerimage'
+
+      - name: Build and push Docker image
         uses: docker/build-push-action@v1
+        with:
+          push: true
