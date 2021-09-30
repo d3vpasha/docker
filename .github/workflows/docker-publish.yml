@@ -16,3 +16,6 @@ jobs:
         with:
           context: .
           push: true
+          username: d3vpasha
+          password: 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
+          registry: ghcr.io
