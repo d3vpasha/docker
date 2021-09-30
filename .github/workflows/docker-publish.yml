@@ -16,7 +16,7 @@ jobs:
         with:
           registry: ghcr.io
           username: d3vpasha
-          password: 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
+          password: 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
 
 
       - name: Build and push Docker image
