@@ -1,0 +1,14 @@
+name: webapp
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: "build webapp"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Build:checkout"
+        uses: actions/checkout@main
+      - name: 'Build:dockerimage'
+        uses: docker/build-push-action@v1
