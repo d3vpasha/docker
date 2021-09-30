@@ -17,11 +17,8 @@ jobs:
           registry: ghcr.io
           username: d3vpasha
           password: ${{ secrets.GITHUB_TOKEN }}
-          repository: d3vpasha/docker
-
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v1
         with:
-          context: .
           push: true
