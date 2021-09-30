@@ -16,7 +16,7 @@ jobs:
         with:
           registry: ghcr.io
           username: d3vpasha
-          password: ${{ secrets.CR_PAT }}
+          password: ${{ secrets.GITHUB_TOKEN }}
           repository: d3vpasha/docker
 
 
