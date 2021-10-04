@@ -36,7 +36,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ghcr.io/d3vpasha/docker:latest #${{ github.actor }}/${{ secrets.GITHUB_TOKEN }}:latest #${{ steps.meta.outputs.tags }}
-          # username: ${{ github.actor }}
-          # password: ${{ secrets.GITHUB_TOKEN }}
+          tags: ${{ env.REGISTRY }}/${{ github.actor }}/${{ github.repository }}:latest #${{ steps.meta.outputs.tags }}
           # labels: ${{ steps.meta.outputs.labels }}
