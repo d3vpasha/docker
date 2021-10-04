@@ -36,5 +36,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
           tags: d3vpasha/docker #${{ steps.meta.outputs.tags }}
           # labels: ${{ steps.meta.outputs.labels }}
